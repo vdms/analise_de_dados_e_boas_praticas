@@ -1,4 +1,8 @@
-# analise_de_dados_e_boas_praticas
+# Data analysis and good practices MVP - Students' dropout and academic success
+
+## Summary
+
+[[ToC]]
 
 ## Dataset for MVP
 
