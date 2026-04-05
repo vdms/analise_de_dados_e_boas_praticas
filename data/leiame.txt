@@ -1,0 +1,3 @@
+A diferença entre a população total divulgada para o município do Rio de Janeiro e a soma dos setores censitários ocorre porque parte dos dados é ajustada por técnicas de imputação estatística, aplicadas pelo IBGE para garantir consistência e completude da base. Assim, a população oficial inclui esses ajustes, enquanto os cruzamentos por variáveis resultam em números ligeiramente menores.
+
+Além disso, na data de em que esses dados foram coletados (setembro, 2025) dos agregados por setores censitários do Censo de 2022, as faixas etárias disponibilizadas pelo IBGE para pessoas alfabetizadas iniciavam-se em 15 anos, encerrando-se em 80 anos ou mais.
