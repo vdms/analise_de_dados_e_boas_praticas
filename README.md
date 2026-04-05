@@ -1,5 +1,7 @@
 # Como a população alfabetizada se distribui no Rio de Janeiro ao longo do tempo (2000–2022)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vdms/analise_de_dados_e_boas_praticas/blob/main/data_analysis_and_good_practices.ipynb)
+
 ## Contexto
 
 Este projeto analisa como a população alfabetizada se distribui entre os bairros do Rio de Janeiro ao longo de três momentos censitários: 2000, 2010 e 2022.
