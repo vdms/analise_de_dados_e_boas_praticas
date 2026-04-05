@@ -6,7 +6,7 @@
 
 Este projeto analisa como a população alfabetizada se distribui entre os bairros do Rio de Janeiro ao longo de três momentos censitários: 2000, 2010 e 2022.
 
-O foco não está apenas no crescimento total, mas em **como essa população se distribui territorialmente**.
+O foco não está apenas no crescimento total, mas em como essa população se distribui territorialmente.
 
 ## Objetivo
 
@@ -18,19 +18,19 @@ Investigar se a distribuição da população alfabetizada entre bairros:
 
 ## Resumo
 
-- A distribuição da população alfabetizada é **altamente desigual em termos de volumes absolutos entre bairros**
-- Essa desigualdade de volumes **permanece ao longo do tempo**, com sinais de intensificação nas extremidades da distribuição
-- A participação dos maiores bairros no total observado **aumenta ao longo do período**
-- A composição por sexo é **estável entre bairros** e não explica a variação observada
-- Há evidência consistente de **envelhecimento da população alfabetizada**
+- A distribuição da população alfabetizada é altamente desigual em termos de volumes absolutos entre bairros
+- Essa desigualdade de volumes permanece ao longo do tempo, com sinais de intensificação nas extremidades da distribuição
+- A participação dos maiores bairros no total observado aumenta ao longo do período
+- A composição por sexo é estável entre bairros e não explica a variação observada
+- Há evidência consistente de envelhecimento da população alfabetizada
 
-> ⚠️ Importante: os resultados referem-se a **volumes absolutos**, não sendo possível inferir desigualdade relativa de alfabetização entre bairros
+> Importante: os resultados referem-se a volumes absolutos, não sendo possível inferir desigualdade relativa de alfabetização entre bairros
 
 ## Dataset
 
 Os dados foram obtidos a partir da plataforma Data.Rio:
 
-🔗 <https://www.data.rio/datasets/e24e35a517be408495abbe098b6672f8/about>
+<https://www.data.rio/datasets/e24e35a517be408495abbe098b6672f8/about>
 
 Contêm:
 
@@ -44,6 +44,39 @@ Contêm:
 - diferenças na estrutura das variáveis entre anos  
 - ausência de denominador populacional total por bairro  
 - mudanças territoriais ao longo do tempo  
+
+## Como executar
+
+Você pode executar o projeto de duas formas:
+
+### Opção 1 — Google Colab (recomendado)
+
+- Acesse diretamente:  
+<https://colab.research.google.com/github/vdms/analise_de_dados_e_boas_praticas/blob/main/data_analysis_and_good_practices.ipynb>  
+
+- Execute as células no ambiente online  
+
+### Opção 2 — Execução local
+
+#### Tecnologias utilizadas
+
+- Python 3.x  
+- pandas  
+- numpy  
+- seaborn  
+- matplotlib  
+- scipy  
+
+#### Instalação
+
+Recomenda-se o uso de um ambiente virtual.
+
+Instale as dependências com:
+
+pip install pandas numpy seaborn matplotlib scipy
+
+- Clone o repositório  
+- Execute o notebook localmente  
 
 ## Metodologia (visão geral)
 
@@ -65,7 +98,7 @@ A análise foi conduzida com foco em:
 
 Distribuição da população alfabetizada por bairro (2000, 2010, 2022)
 
-![img[figure_3.5.png]](https://github.com/vdms/analise_de_dados_e_boas_praticas/blob/main/images/figure_3.5.png?raw=true)
+![Distribuição da população alfabetizada](https://github.com/vdms/analise_de_dados_e_boas_praticas/blob/main/images/figure_3.5.png?raw=true)
 
 Este gráfico resume o ponto central do projeto:
 
@@ -91,7 +124,7 @@ Este gráfico resume o ponto central do projeto:
 
 - proporção feminina estável (~54%)  
 - baixa variação entre bairros  
-- associação fraca com volumes totais  
+- associação linear fraca com volumes totais  
 
 ### Estrutura etária
 
@@ -101,23 +134,17 @@ Este gráfico resume o ponto central do projeto:
 
 ## Conclusões
 
-- A distribuição da população alfabetizada entre bairros é **fortemente desigual em termos absolutos**
-- Essa estrutura **se mantém ao longo do tempo**, com sinais de maior concentração nos extremos
-- Diferenças por sexo **não explicam a variação observada**
-- Há uma **mudança demográfica clara**, com envelhecimento da população alfabetizada  
+- A distribuição da população alfabetizada entre bairros é fortemente desigual em termos absolutos
+- Essa estrutura se mantém ao longo do tempo, com sinais de maior concentração nos extremos
+- Diferenças por sexo não explicam a variação observada
+- Há uma mudança demográfica clara, com envelhecimento da população alfabetizada  
 
 ## Limitações
 
-- análise baseada em **volumes absolutos**  
+- análise baseada em volumes absolutos  
 - ausência de dados populacionais totais por bairro  
 - impossibilidade de inferir desigualdade relativa de alfabetização  
 - exclusão de alguns territórios para manter comparabilidade  
-
-## Como executar
-
-1. Clonar o repositório  
-2. Abrir o notebook principal  
-3. Executar as células sequencialmente  
 
 ## Nota final
 
@@ -125,8 +152,8 @@ Este projeto prioriza:
 
 - consistência metodológica  
 - transparência analítica  
-- alinhamento entre evidência e interpretação
+- alinhamento entre evidência e interpretação  
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
