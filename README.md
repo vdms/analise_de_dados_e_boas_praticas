@@ -79,7 +79,9 @@ Recomenda-se o uso de um ambiente virtual.
 
 Instale as dependências com:
 
+```bash
 pip install pandas numpy seaborn matplotlib scipy
+```
 
 - Clone o repositório  
 - Execute o notebook localmente  
