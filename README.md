@@ -1,12 +1,12 @@
-# 📊 Como a população alfabetizada se distribui no Rio de Janeiro ao longo do tempo (2000–2022)
+# Como a população alfabetizada se distribui no Rio de Janeiro ao longo do tempo (2000–2022)
 
-## 📌 Contexto
+## Contexto
 
 Este projeto analisa como a população alfabetizada se distribui entre os bairros do Rio de Janeiro ao longo de três momentos censitários: 2000, 2010 e 2022.
 
 O foco não está apenas no crescimento total, mas em **como essa população se distribui territorialmente**.
 
-## 🎯 Objetivo
+## Objetivo
 
 Investigar se a distribuição da população alfabetizada entre bairros:
 
@@ -14,7 +14,7 @@ Investigar se a distribuição da população alfabetizada entre bairros:
 - mudou ao longo do tempo  
 - apresenta padrões associados a sexo e estrutura etária  
 
-## ⚡ Resumo executivo
+## Resumo
 
 - A distribuição da população alfabetizada é **altamente desigual em termos de volumes absolutos entre bairros**
 - Essa desigualdade de volumes **permanece ao longo do tempo**, com sinais de intensificação nas extremidades da distribuição
@@ -24,7 +24,7 @@ Investigar se a distribuição da população alfabetizada entre bairros:
 
 > ⚠️ Importante: os resultados referem-se a **volumes absolutos**, não sendo possível inferir desigualdade relativa de alfabetização entre bairros
 
-## 📂 Dataset
+## Dataset
 
 Os dados foram obtidos a partir da plataforma Data.Rio:
 
@@ -43,7 +43,7 @@ Contêm:
 - ausência de denominador populacional total por bairro  
 - mudanças territoriais ao longo do tempo  
 
-## 🧠 Metodologia (visão geral)
+## Metodologia (visão geral)
 
 Para garantir comparabilidade:
 
@@ -59,7 +59,7 @@ A análise foi conduzida com foco em:
 - análise territorial (ranking e participação)  
 - composição por sexo e idade  
 
-## 📊 Principal evidência
+## Principal evidência
 
 Distribuição da população alfabetizada por bairro (2000, 2010, 2022)
 
@@ -71,7 +71,7 @@ Este gráfico resume o ponto central do projeto:
 - poucos bairros apresentam volumes muito elevados  
 - a cauda superior se torna mais pronunciada ao longo do tempo  
 
-## 🔍 Principais análises
+## Principais análises
 
 ### Distribuição
 
@@ -97,27 +97,27 @@ Este gráfico resume o ponto central do projeto:
 - aumento consistente da participação de idosos  
 - evidência de envelhecimento da população alfabetizada  
 
-## ✅ Conclusões
+## Conclusões
 
 - A distribuição da população alfabetizada entre bairros é **fortemente desigual em termos absolutos**
 - Essa estrutura **se mantém ao longo do tempo**, com sinais de maior concentração nos extremos
 - Diferenças por sexo **não explicam a variação observada**
 - Há uma **mudança demográfica clara**, com envelhecimento da população alfabetizada  
 
-## ⚠️ Limitações
+## Limitações
 
 - análise baseada em **volumes absolutos**  
 - ausência de dados populacionais totais por bairro  
 - impossibilidade de inferir desigualdade relativa de alfabetização  
 - exclusão de alguns territórios para manter comparabilidade  
 
-## ▶️ Como executar
+## Como executar
 
 1. Clonar o repositório  
 2. Abrir o notebook principal  
 3. Executar as células sequencialmente  
 
-## 🎯 Nota final
+## Nota final
 
 Este projeto prioriza:
 
