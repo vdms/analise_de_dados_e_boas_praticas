@@ -32,6 +32,12 @@ Os dados foram obtidos a partir da plataforma Data.Rio:
 
 <https://www.data.rio/datasets/e24e35a517be408495abbe098b6672f8/about>
 
+Links raw dos arquivos utilizados:
+
+- 2000: <https://raw.githubusercontent.com/vdms/analise_de_dados_e_boas_praticas/main/data/495_2000.csv>
+- 2010: <https://raw.githubusercontent.com/vdms/analise_de_dados_e_boas_praticas/main/data/495_2010.csv>
+- 2022: <https://raw.githubusercontent.com/vdms/analise_de_dados_e_boas_praticas/main/data/495_2022.csv>
+
 Contêm:
 
 - população alfabetizada por bairro  
