@@ -126,3 +126,7 @@ Este projeto prioriza:
 - consistência metodológica  
 - transparência analítica  
 - alinhamento entre evidência e interpretação
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
