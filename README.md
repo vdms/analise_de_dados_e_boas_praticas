@@ -19,8 +19,8 @@ Investigar se a distribuição da população alfabetizada entre bairros:
 ## Resumo
 
 - A distribuição da população alfabetizada é altamente desigual em termos de volumes absolutos entre bairros
-- Essa desigualdade de volumes permanece ao longo do tempo, com sinais de intensificação nas extremidades da distribuição
-- A participação dos maiores bairros no total observado aumenta ao longo do período
+- Essa desigualdade de volumes permanece ao longo do tempo, com sinais descritivos parciais de maior heterogeneidade nos extremos da distribuição
+- A participação dos maiores bairros no total observado (medida descritiva, não ajustada por população) aumenta ao longo do período
 - A composição por sexo é estável entre bairros e não explica a variação observada
 - Há evidência consistente de envelhecimento da população alfabetizada
 
@@ -117,7 +117,7 @@ Este gráfico resume o ponto central do projeto:
 ### Território
 
 - poucos bairros concentram grande parte dos volumes  
-- aumento da participação relativa desses bairros no total observado  
+- aumento da participação desses bairros no total observado (medida descritiva, não ajustada por população)  
 - alta rotatividade entre os maiores bairros ao longo do tempo  
 
 ### Sexo
@@ -135,7 +135,8 @@ Este gráfico resume o ponto central do projeto:
 ## Conclusões
 
 - A distribuição da população alfabetizada entre bairros é fortemente desigual em termos absolutos
-- Essa estrutura se mantém ao longo do tempo, com sinais de maior concentração nos extremos
+- Essa estrutura se mantém ao longo do tempo, com sinais descritivos parciais de maior heterogeneidade nos extremos
+- O comportamento observado é compatível com efeitos de escala territorial
 - Diferenças por sexo não explicam a variação observada
 - Há uma mudança demográfica clara, com envelhecimento da população alfabetizada  
 
