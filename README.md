@@ -75,7 +75,7 @@ A análise foi conduzida com foco em:
 
 Distribuição da população alfabetizada por bairro (2000, 2010, 2022)
 
-![img[figure_3.5.png]](https://)
+![img[figure_3.5.png]](https://github.com/vdms/analise_de_dados_e_boas_praticas/blob/main/images/figure_3.5.png?raw=true)
 
 Este gráfico resume o ponto central do projeto:
 
