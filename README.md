@@ -120,7 +120,7 @@ Este gráfico resume o ponto central do projeto:
 
 - forte assimetria à direita  
 - presença consistente de valores extremos  
-- heterogeneidade significativa entre bairros  
+- heterogeneidade persistente entre bairros  
 
 ### Território
 
