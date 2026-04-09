@@ -1,36 +1,32 @@
 """
 fingerprint.py
 --------------
-Extrai todos os outputs de texto/tabela do notebook e gera um JSON com:
-  - hash SHA-256 de cada célula com output
-  - texto bruto dos outputs (stdout, text/plain, text/html resumido)
+Gera um hash SHA-256 para cada célula do notebook que produziu output e salva
+tudo num JSON em scripts/fingerprints/. Também compara dois fingerprints para
+verificar se algum resultado mudou entre versões.
 
 Uso:
   python scripts/fingerprint.py                     # gera fingerprint atual
   python scripts/fingerprint.py --compare base.json # compara com baseline
 
-Arquivos gerados em scripts/fingerprints/
+Por que isso existe?
+--------------------
+Depois que a análise estava pronta, precisava melhorar a legibilidade do
+código — adicionar docstrings, células explicativas, um sumário executivo. O
+risco real era a refatoração de `construir_base_harmonizada()`: a função tinha
+~100 linhas com dois dicionários de mapeamento embutidos direto no corpo, o que
+a tornava difícil de ler. Extraímos esses dicionários como constantes de módulo
+e a função caiu para ~20 linhas.
 
-Finalidade
-----------
-Este script foi criado como rede de segurança para uma série de refinamentos
-aplicados ao notebook após a entrega inicial:
+A questão era: como ter certeza de que nenhum número mudou?
 
-  - Rounds 1 e 2: inserção de docstrings, células de markdown explicativas e
-    um sumário executivo — mudanças que não deveriam alterar nenhum resultado.
-  - Round 3 (motivação principal): refatoração de `construir_base_harmonizada()`,
-    que passou de ~100 linhas (dois dicionários de mapeamento embutidos no corpo
-    da função + lógica inline) para ~20 linhas, com os dicionários extraídos como
-    constantes de módulo (`MAPA_HARM_2000_2010`, `MAPA_HARM_2022`,
-    `ORDEM_FINAL_HARM`). A função ficou legível, mas a mudança estrutural
-    justificava uma validação formal dos outputs.
+A resposta foi tirar um "retrato" de todos os outputs antes de qualquer mudança
+(baseline_v1.0.json, tag git v1.0-pre-refinements) e comparar depois. A
+comparação é feita pelo conjunto de SHAs — não por índice de célula — justamente
+para não gerar falsos positivos quando novas células são inseridas no meio do
+notebook.
 
-A abordagem adotada é comparação por conteúdo (conjunto de SHAs), não por índice
-de célula — assim, inserções de novas células não geram falsos positivos.
-
-Baseline de referência: scripts/fingerprints/baseline_v1.0.json
-  Capturada antes de qualquer refinamento (tag git: v1.0-pre-refinements).
-  Resultado da validação final: 0 SHAs perdidos após todos os três rounds.
+Resultado: 0 SHAs perdidos após todos os rounds de refinamento.
 """
 
 import argparse
