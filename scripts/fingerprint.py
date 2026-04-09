@@ -10,6 +10,27 @@ Uso:
   python scripts/fingerprint.py --compare base.json # compara com baseline
 
 Arquivos gerados em scripts/fingerprints/
+
+Finalidade
+----------
+Este script foi criado como rede de segurança para uma série de refinamentos
+aplicados ao notebook após a entrega inicial:
+
+  - Rounds 1 e 2: inserção de docstrings, células de markdown explicativas e
+    um sumário executivo — mudanças que não deveriam alterar nenhum resultado.
+  - Round 3 (motivação principal): refatoração de `construir_base_harmonizada()`,
+    que passou de ~100 linhas (dois dicionários de mapeamento embutidos no corpo
+    da função + lógica inline) para ~20 linhas, com os dicionários extraídos como
+    constantes de módulo (`MAPA_HARM_2000_2010`, `MAPA_HARM_2022`,
+    `ORDEM_FINAL_HARM`). A função ficou legível, mas a mudança estrutural
+    justificava uma validação formal dos outputs.
+
+A abordagem adotada é comparação por conteúdo (conjunto de SHAs), não por índice
+de célula — assim, inserções de novas células não geram falsos positivos.
+
+Baseline de referência: scripts/fingerprints/baseline_v1.0.json
+  Capturada antes de qualquer refinamento (tag git: v1.0-pre-refinements).
+  Resultado da validação final: 0 SHAs perdidos após todos os três rounds.
 """
 
 import argparse
