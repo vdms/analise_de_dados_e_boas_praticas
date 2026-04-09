@@ -3,6 +3,8 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vdms/analise_de_dados_e_boas_praticas/blob/main/data_analysis_and_good_practices.ipynb)
 [![Ver relatório](https://img.shields.io/badge/Relatório-GitHub%20Pages-blue)](https://vdms.github.io/analise_de_dados_e_boas_praticas/)
 
+> **Nota sobre o GitHub Pages:** o entregável principal do MVP é o notebook, destinado à execução interativa no Google Colab. O relatório publicado no GitHub Pages foi gerado a partir do notebook já executado — aproveitei o projeto como oportunidade para explorar tanto o fluxo de publicação com GitHub Pages quanto a ferramenta Quarto para renderização do relatório.
+
 ## Contexto
 
 Este projeto analisa como a população alfabetizada se distribui entre os bairros do Rio de Janeiro ao longo de três momentos censitários: 2000, 2010 e 2022.

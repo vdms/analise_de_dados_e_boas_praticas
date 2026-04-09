@@ -1,0 +1,28 @@
+project:
+  output-dir: docs
+
+execute:
+  enabled: false
+
+format:
+  html:
+    output-file: index.html
+    theme:
+      - lux
+      - docs/_custom.scss
+    code-fold: true
+    code-tools:
+      source: false
+      toggle: true
+      caption: "Código"
+    code-summary: "Mostrar código"
+    toc: true
+    toc-location: left
+    toc-title: "Conteúdo"
+    toc-depth: 3
+    smooth-scroll: true
+    embed-resources: true
+    number-sections: false
+    include-after-body: docs/_accordion.js
+    lang: pt-BR
+    title-block-banner: true

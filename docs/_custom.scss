@@ -1,0 +1,127 @@
+/*-- scss:defaults --*/
+
+// Accent color — deep teal  
+$primary:       #1a6b72 !default;
+$link-color:    #1a6b72 !default;
+
+// Typography
+$headings-font-weight: 600;
+$font-size-root: 16px;
+
+// Spacing
+$spacer: 1rem;
+
+/*-- scss:rules --*/
+
+/* ── Banner / title block ───────────────────────────── */
+.quarto-title-block .quarto-title-banner {
+  background: linear-gradient(135deg, #1a6b72 0%, #0d4a50 100%);
+  padding: 3rem 2rem 2.5rem;
+}
+
+.quarto-title-block .title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.quarto-title-block .description {
+  color: rgba(255,255,255,0.85);
+}
+
+/* ── TOC sidebar ─────────────────────────────────────── */
+#quarto-sidebar {
+  border-right: 1px solid #e9ecef;
+  padding-right: 1rem;
+}
+
+#TOC a {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+#TOC a:hover,
+#TOC a.active {
+  color: $primary;
+  font-weight: 600;
+}
+
+/* ── Section dividers ────────────────────────────────── */
+.section-accordion {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.section-accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.85rem 1.25rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.section-accordion-header:hover {
+  background: #eef6f7;
+}
+
+.section-accordion-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: $primary;
+  border: none;
+}
+
+.section-accordion-chevron {
+  font-size: 1rem;
+  color: #888;
+  transition: transform 0.25s ease;
+}
+
+.section-accordion-chevron.collapsed {
+  transform: rotate(-90deg);
+}
+
+.section-accordion-body {
+  padding: 1.25rem 1.5rem;
+}
+
+/* ── Code blocks ─────────────────────────────────────── */
+.sourceCode {
+  border-radius: 0.4rem;
+  font-size: 0.85rem;
+}
+
+details.code-fold summary {
+  color: $primary;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* ── Outputs ─────────────────────────────────────────── */
+.cell-output-display table {
+  font-size: 0.875rem;
+}
+
+.cell-output-display img {
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 100%;
+  margin: 0.5rem 0;
+}
+
+/* ── Print / mobile ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .section-accordion-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .quarto-title-block .title {
+    font-size: 1.5rem;
+  }
+}
