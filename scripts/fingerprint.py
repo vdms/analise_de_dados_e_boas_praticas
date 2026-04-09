@@ -15,7 +15,7 @@ Depois que a análise estava pronta, precisava melhorar a legibilidade do
 código — adicionar docstrings, células explicativas, um sumário executivo. O
 risco real era a refatoração de `construir_base_harmonizada()`: a função tinha
 ~100 linhas com dois dicionários de mapeamento embutidos direto no corpo, o que
-a tornava difícil de ler. Extraímos esses dicionários como constantes de módulo
+a tornava difícil de ler. Extraí esses dicionários como constantes de módulo
 e a função caiu para ~20 linhas.
 
 A questão era: como ter certeza de que nenhum número mudou?
